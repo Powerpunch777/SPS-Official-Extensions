@@ -1,7 +1,8 @@
 # SPS Official Extensions
 
-This is the static, signed distribution channel for SPS-built extensions. It is
-not a community marketplace and it does not accept third-party uploads.
+This is the static, signed distribution channel for SPS-built extensions. SPS
+Desktop presents connected Catalog sources in Settings > Plugins. This is not a
+community marketplace and it does not accept third-party uploads.
 
 The repository contains only immutable Registry metadata and `.spsplugin`
 artifacts that are already distributed to SPS Desktop installations. It does
@@ -17,7 +18,8 @@ SPS Desktop pins the official Registry root public key and verifies:
 3. artifact SHA-256 and size before staging
 
 The Registry catalog never grants installation or execution permission by
-itself. The SPS Owner reviews a package in a disabled stage before enabling it.
+itself. It only provides package metadata that SPS can inspect before a plugin
+lifecycle change.
 
 For a local integrity check with the public SDK:
 
@@ -31,7 +33,7 @@ node ..\sps-plugin-sdk\cli\sps-plugin.mjs inspect .
 
 A plugin artifact must be available to the computer that installs it, so its
 runtime files can be inspected by the recipient. This does not publish SPS
-Core or Owner Host source code and does not grant rights to use SPS names,
+Core or Host runtime source code and does not grant rights to use SPS names,
 logos, official badges, or Registry operations.
 
 ## Publishing
