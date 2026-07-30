@@ -1,5 +1,8 @@
 # SPS Official Extensions
 
+For the SPS product overview, downloads, and feedback routes, visit
+[Powerpunch777/SPS](https://github.com/Powerpunch777/SPS).
+
 This is the static, signed distribution channel for SPS-built extensions. SPS
 Desktop presents connected Catalog sources in Settings > Plugins. This is not a
 community marketplace and it does not accept third-party uploads.
